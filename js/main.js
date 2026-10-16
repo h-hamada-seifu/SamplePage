@@ -160,7 +160,9 @@
       link.addEventListener('click', (e) => {
         if (e.metaKey || e.ctrlKey || e.shiftKey || link.target === '_blank') return;
         const url = new URL(link.href, location.href);
-        if (url.pathname === location.pathname) return;
+        // Vercel の cleanUrls（/menu.html → /menu）でも同じページと判定する
+        const normalize = (p) => p.replace(/(index)?\.html$/, '').replace(/\/$/, '');
+        if (normalize(url.pathname) === normalize(location.pathname)) return;
         e.preventDefault();
         body.classList.remove('nav-open');
         body.classList.add('is-leaving');
