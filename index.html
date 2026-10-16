@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鶏白湯そば 灯 -AKARI- ｜ 大阪・阿倍野</title>
+  <meta name="description" content="大阪・阿倍野に誕生した鶏白湯ラーメン専門店「灯 -AKARI-」。鶏をじっくり炊き出した濃厚でまろやかな白湯スープと、三種の塩で仕立てる一杯。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__stamp">灯</div>
+      <p class="loader__text">TORI PAITAN · ABENO</p>
+    </div>
+  </div>
+  <div class="page-curtain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo" aria-label="鶏白湯そば 灯 トップへ">
+        <span class="logo__stamp">灯</span>
+        <span class="logo__text">
+          <span class="logo__ja">鶏白湯そば 灯</span>
+          <span class="logo__en">AKARI</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span><span></span></button>
+      <nav class="nav" id="global-nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">トップ<small>TOP</small></a></li>
+          <li><a class="nav__link" href="about.html">こだわり<small>CONCEPT</small></a></li>
+          <li><a class="nav__link" href="menu.html">お品書き<small>MENU</small></a></li>
+          <li><a class="nav__link" href="access.html">店舗情報<small>ACCESS</small></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ヒーロー -->
+    <section class="hero">
+      <div class="hero__bg-kanji" aria-hidden="true" data-parallax="-0.15">鶏</div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title" data-split>一滴に、<br><span class="accent">鶏</span>の真心を。</h1>
+          <div class="hero__lead">
+            <p class="hero__lead-en">Tori Paitan &amp; Shio Soba</p>
+            <p>阿倍野の路地に、ひとつの灯がともりました。<br>鶏を丸ごと炊き上げた、まろやかな白湯スープ。<br>三種の塩で輪郭を描いた、やさしく力強い一杯をどうぞ。</p>
+            <a href="menu.html" class="btn">お品書きを見る <span class="btn__arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="hero__ring" viewBox="0 0 400 400" aria-hidden="true">
+            <defs><path id="ring-path" d="M200,200 m-185,0 a185,185 0 1,1 370,0 a185,185 0 1,1 -370,0"/></defs>
+            <text><textPath href="#ring-path">TORI PAITAN · SHIO SOBA · ABENO OSAKA · SINCE 2026 · TORI PAITAN · SHIO SOBA · ABENO OSAKA ·</textPath></text>
+          </svg>
+
+          <svg class="hero__bowl" viewBox="0 0 400 400" role="img" aria-label="鶏白湯そばのイラスト">
+            <defs>
+              <radialGradient id="soup" cx="45%" cy="40%" r="65%">
+                <stop offset="0" stop-color="#fcf6e8"/>
+                <stop offset="0.6" stop-color="#efdfbc"/>
+                <stop offset="1" stop-color="#d6bd8a"/>
+              </radialGradient>
+              <radialGradient id="chashu" cx="40%" cy="40%" r="70%">
+                <stop offset="0" stop-color="#fbe4d8"/>
+                <stop offset="0.7" stop-color="#eab7a2"/>
+                <stop offset="1" stop-color="#c88870"/>
+              </radialGradient>
+            </defs>
+            <!-- 器 -->
+            <circle cx="200" cy="200" r="192" fill="#1c1916"/>
+            <circle cx="200" cy="200" r="180" fill="none" stroke="#c8322a" stroke-width="3" stroke-dasharray="14 6"/>
+            <circle cx="200" cy="200" r="172" fill="#0b0a09"/>
+            <circle cx="200" cy="200" r="160" fill="url(#soup)"/>
+            <!-- 鶏油 -->
+            <g fill="#e2b956" opacity="0.35">
+              <circle cx="120" cy="150" r="6"/><circle cx="270" cy="120" r="4"/><circle cx="300" cy="240" r="7"/>
+              <circle cx="150" cy="290" r="5"/><circle cx="230" cy="300" r="3"/><circle cx="100" cy="230" r="4"/>
+            </g>
+            <!-- 麺 -->
+            <g fill="none" stroke="#ecd89e" stroke-width="7" stroke-linecap="round" opacity="0.85">
+              <path d="M95 250 q50 -30 100 10 t110 -5"/>
+              <path d="M105 270 q50 -25 95 8 t100 0"/>
+              <path d="M125 292 q40 -20 80 6 t70 -4"/>
+            </g>
+            <!-- 鶏チャーシュー -->
+            <g transform="rotate(-25 160 150)">
+              <ellipse cx="160" cy="150" rx="62" ry="38" fill="url(#chashu)"/>
+              <ellipse cx="160" cy="150" rx="62" ry="38" fill="none" stroke="#c88870" stroke-width="2"/>
+            </g>
+            <g transform="rotate(10 215 135)">
+              <ellipse cx="215" cy="135" rx="55" ry="34" fill="url(#chashu)"/>
+              <ellipse cx="215" cy="135" rx="55" ry="34" fill="none" stroke="#c88870" stroke-width="2"/>
+            </g>
+            <!-- 味玉 -->
+            <g transform="rotate(20 280 210)">
+              <ellipse cx="280" cy="210" rx="38" ry="30" fill="#fffaf0"/>
+              <ellipse cx="280" cy="210" rx="20" ry="16" fill="#f2a63c"/>
+              <ellipse cx="280" cy="210" rx="12" ry="9" fill="#e48a1e"/>
+            </g>
+            <!-- 白髪ねぎ -->
+            <g stroke="#fffdf6" stroke-width="2.5" stroke-linecap="round">
+              <path d="M200 200 l30 -12"/><path d="M205 210 l26 4"/><path d="M196 214 l20 18"/>
+              <path d="M192 196 l-8 -22"/><path d="M210 192 l18 -22"/>
+            </g>
+            <!-- 青ねぎ -->
+            <g fill="none" stroke="#78a957" stroke-width="3.5">
+              <circle cx="240" cy="230" r="5"/><circle cx="225" cy="250" r="4.5"/><circle cx="255" cy="255" r="5"/>
+              <circle cx="180" cy="235" r="4"/><circle cx="205" cy="245" r="4.5"/><circle cx="130" cy="215" r="4"/>
+            </g>
+            <!-- 柚子皮 -->
+            <g fill="#f2c230">
+              <rect x="215" y="180" width="18" height="5" rx="2" transform="rotate(-30 224 182)"/>
+              <rect x="190" y="225" width="14" height="4" rx="2" transform="rotate(25 197 227)"/>
+            </g>
+            <!-- 三つ葉 -->
+            <path d="M120 190 q-10 -24 10 -30 q6 18 -10 30 z M120 190 q-24 -6 -26 14 q18 2 26 -14 z M120 190 q4 -24 24 -18 q-8 18 -24 18 z" fill="#5e9443"/>
+          </svg>
+
+          <svg class="steam" viewBox="0 0 200 160" aria-hidden="true">
+            <path d="M60 150 q-20 -30 0 -60 t0 -70"/>
+            <path d="M100 150 q20 -30 0 -60 t0 -70"/>
+            <path d="M140 150 q-20 -30 0 -60 t0 -70"/>
+          </svg>
+
+          <div class="hero__badge">2026.11<br>OPEN<small>GRAND</small></div>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span class="scroll-cue__line"></span>SCROLL</div>
+    </section>
+
+    <!-- 流れる帯 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__item"><span>Tori Paitan</span><i></i><span>鶏白湯</span><i></i><span>Shio Soba</span><i></i><span>塩そば</span><i></i><span>Abeno Osaka</span><i></i><span>阿倍野</span><i></i></div>
+        <div class="marquee__item"><span>Tori Paitan</span><i></i><span>鶏白湯</span><i></i><span>Shio Soba</span><i></i><span>塩そば</span><i></i><span>Abeno Osaka</span><i></i><span>阿倍野</span><i></i></div>
+      </div>
+    </div>
+
+    <!-- コンセプト -->
+    <section class="section concept">
+      <div class="container concept__grid">
+        <div class="concept__visual">
+          <div class="concept__photo" data-reveal="mask">
+            <div class="bowl" data-parallax="0.06"><span class="bowl__negi"></span></div>
+          </div>
+          <span class="concept__tag">阿倍野 鶏白湯</span>
+        </div>
+        <div class="concept__text">
+          <div class="section-head">
+            <p class="section-head__en">Concept</p>
+            <h2 class="section-head__title" data-split>白く、深く、<br>やさしい一杯。</h2>
+          </div>
+          <p data-reveal>国産の鶏ガラともみじを、八時間かけて強火で炊き出す。<br>骨の髄まで溶け込んだスープは、とろりと白く、驚くほど澄んだ後味です。</p>
+          <p data-reveal style="--delay:.15s">その旨みを引き立てるのは、瀬戸内・沖縄・モンゴルの三種の塩。<br>毎日食べても飽きない、阿倍野の新しい定番を目指しています。</p>
+          <div data-reveal style="--delay:.3s"><a href="about.html" class="btn">こだわりを見る <span class="btn__arrow">→</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- おすすめ -->
+    <section class="section pickup">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-head__en">Pick Up</p>
+          <h2 class="section-head__title" data-split>灯の、おすすめ</h2>
+        </div>
+        <ul class="pickup__list">
+          <li class="dish-card" data-reveal data-tilt>
+            <span class="dish-card__no">No.01</span>
+            <div class="dish-card__visual"><div class="bowl"><span class="bowl__negi"></span></div></div>
+            <h3 class="dish-card__name">鶏白湯そば 塩</h3>
+            <p class="dish-card__desc">看板の一杯。とろりと濃厚な白湯に、三種の塩をきかせて。</p>
+            <p class="dish-card__price">¥1,000<small>税込</small></p>
+          </li>
+          <li class="dish-card" data-reveal data-tilt style="--delay:.12s">
+            <span class="dish-card__no">No.02</span>
+            <div class="dish-card__visual"><div class="bowl bowl--yuzu"><span class="bowl__negi"></span></div></div>
+            <h3 class="dish-card__name">柚子塩そば</h3>
+            <p class="dish-card__desc">高知県産柚子の香りが広がる、すっきり軽やかな味わい。</p>
+            <p class="dish-card__price">¥1,050<small>税込</small></p>
+          </li>
+          <li class="dish-card" data-reveal data-tilt style="--delay:.24s">
+            <span class="dish-card__no">No.03</span>
+            <div class="dish-card__visual"><div class="bowl bowl--tsukemen"><span class="bowl__negi"></span></div></div>
+            <h3 class="dish-card__name">鶏白湯つけ麺</h3>
+            <p class="dish-card__desc">濃度を高めたつけ汁に、もちもちの太麺がよく絡みます。</p>
+            <p class="dish-card__price">¥1,100<small>税込</small></p>
+          </li>
+        </ul>
+        <div class="pickup__more" data-reveal><a href="menu.html" class="btn">お品書きをすべて見る <span class="btn__arrow">→</span></a></div>
+      </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section class="section news">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__en">News</p>
+          <h2 class="section-head__title" data-split>お知らせ</h2>
+        </div>
+        <ul class="news__list">
+          <li class="news__item" data-reveal>
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2026-10-16">2026.10.16</time>
+              <span class="news__cat">お知らせ</span>
+              <span class="news__title">11月1日（日）グランドオープンが決定しました</span>
+              <span class="news__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="news__item" data-reveal style="--delay:.1s">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2026-10-10">2026.10.10</time>
+              <span class="news__cat">キャンペーン</span>
+              <span class="news__title">オープン記念：3日間 味玉トッピング無料</span>
+              <span class="news__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="news__item" data-reveal style="--delay:.2s">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2026-10-01">2026.10.01</time>
+              <span class="news__cat">採用</span>
+              <span class="news__title">オープニングスタッフを募集しています</span>
+              <span class="news__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 店舗情報 -->
+    <section class="section info-strip">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="section-head__en">Information</p>
+          <h2 class="section-head__title" data-split>阿倍野で、お待ちしています</h2>
+        </div>
+        <div class="info-strip__grid" data-reveal="zoom">
+          <div class="info-strip__cell">
+            <p class="info-strip__label">Hours</p>
+            <p class="info-strip__value">昼 11:00 – 15:00<br>夜 18:00 – 22:00</p>
+          </div>
+          <div class="info-strip__cell">
+            <p class="info-strip__label">Holiday</p>
+            <p class="info-strip__value">毎週水曜日<br><small>（祝日の場合は翌日）</small></p>
+          </div>
+          <div class="info-strip__cell">
+            <p class="info-strip__label">Access</p>
+            <p class="info-strip__value">地下鉄 阿倍野駅<br>徒歩3分</p>
+          </div>
+        </div>
+        <div class="info-strip__cta" data-reveal><a href="access.html" class="btn btn--solid">店舗情報・アクセス <span class="btn__arrow">→</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__big" aria-hidden="true" data-parallax="0.05">Tori Paitan Akari</p>
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo__stamp">灯</span>
+            <span class="logo__text"><span class="logo__ja">鶏白湯そば 灯</span><span class="logo__en">AKARI</span></span>
+          </a>
+          <p class="site-footer__info">〒545-0000 大阪府大阪市阿倍野区阿倍野筋○-○-○<br>TEL 06-0000-0000</p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul class="site-footer__links">
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="about.html">こだわり</a></li>
+            <li><a href="menu.html">お品書き</a></li>
+            <li><a href="access.html">店舗情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul class="site-footer__links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">LINE</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__copy">
+        <span>© 2026 TORI PAITAN SOBA AKARI</span>
+        <span class="to-top" role="button" tabindex="0">BACK TO TOP ↑</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
