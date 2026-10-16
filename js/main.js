@@ -66,6 +66,12 @@
 
   /* ---------- スクロール出現 ---------- */
   const revealTargets = document.querySelectorAll('[data-reveal], [data-split]');
+  // 出現の fade が終わったら is-revealed を付ける（ホバー時の transition 切り替え用）
+  revealTargets.forEach((el) => {
+    el.addEventListener('transitionend', (e) => {
+      if (e.target === el && e.propertyName === 'opacity') el.classList.add('is-revealed');
+    });
+  });
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -76,7 +82,7 @@
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
     revealTargets.forEach((el) => io.observe(el));
   } else {
-    revealTargets.forEach((el) => el.classList.add('is-visible'));
+    revealTargets.forEach((el) => el.classList.add('is-visible', 'is-revealed'));
   }
 
   /* ---------- 数字カウントアップ ---------- */
@@ -99,6 +105,9 @@
       });
     }, { threshold: 0.6 });
     counters.forEach((el) => countIo.observe(el));
+  } else {
+    // IntersectionObserver 非対応ブラウザでは最終値をそのまま表示する
+    counters.forEach((el) => { el.textContent = el.dataset.count; });
   }
 
   /* ---------- パララックス ---------- */

@@ -135,11 +135,17 @@
     <a class="btn" id="home-link" href="/">トップへ戻る <span aria-hidden="true">→</span></a>
   </main>
   <script>
-    // GitHub Pages（/リポジトリ名/ 配下）と Vercel（ルート直下）の両方でトップへ戻れるようにする
+    // GitHub Pages のプロジェクトサイト（/リポジトリ名/ 配下）でもトップへ戻れるようにする。
+    // ユーザーサイト（user.github.io）や Vercel ではルート直下がトップなので、
+    // 先頭のパスにトップページが実在するときだけ書き換える。
     (() => {
       if (!location.hostname.endsWith('github.io')) return;
-      const repo = location.pathname.split('/')[1];
-      if (repo) document.getElementById('home-link').href = '/' + repo + '/';
+      const first = location.pathname.split('/')[1];
+      if (!first || first.includes('.')) return;
+      const candidate = '/' + first + '/';
+      fetch(candidate, { method: 'HEAD' })
+        .then((res) => { if (res.ok) document.getElementById('home-link').href = candidate; })
+        .catch(() => { /* 失敗時はルート直下のまま */ });
     })();
   </script>
 </body>
